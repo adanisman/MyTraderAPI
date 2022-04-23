@@ -1,0 +1,7 @@
+package com.mytrader.model;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface StockSignalsRepository extends JpaRepository<StockSignals,Long>{
+
+}
