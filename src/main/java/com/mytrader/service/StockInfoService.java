@@ -2,7 +2,6 @@ package com.mytrader.service;
 
 import java.util.List;
 
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +17,6 @@ public class StockInfoService {
 	public void save(StockInfo stockInfo) {
 		stockInfoRepository.save(stockInfo);
 	}
-	@Test
 	public void saveAll(List<StockInfo> stockInfoList) {
 		// TODO Auto-generated method stub
 		stockInfoRepository.saveAllAndFlush(stockInfoList);
