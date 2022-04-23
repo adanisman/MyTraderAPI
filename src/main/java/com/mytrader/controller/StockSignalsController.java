@@ -8,6 +8,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,7 +23,7 @@ public class StockSignalsController {
 	@Autowired
 	StockSignalsService stockSignalsService;	
 	
-
+	@CrossOrigin(origins="*")
 	@RequestMapping(value="/api/getSignals/{indicators}", method=RequestMethod.GET)
 	public List<StockSignals> getSignalsData(@PathVariable List<String> indicators) throws IOException {
 		
