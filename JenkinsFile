@@ -8,21 +8,22 @@ pipeline {
             }
                             
         }
-    }
-    stages {
+   
+
         stage("test") {
             steps {
                  echo 'testing the application...'
             }
                             
         }
-    }
-    stages {
+
+
         stage("deployment") {
             steps {
                 echo 'deployment the application...'
             }
                             
         }
-    }
+
+     }
 }
